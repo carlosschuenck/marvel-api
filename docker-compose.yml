@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  marvel-api:
+    image: marvel-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - MARVEL_PUBLIC_KEY=<PUT_YOUR_PUBLIC_KEY_HERE>
+      - MARVEL_PRIVATE_KEY=<PUT_YOUR_PRIVATE_KEY_HERE>
+    restart: always
+    ports:
+      - '8080:8080'

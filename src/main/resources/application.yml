@@ -1,0 +1,7 @@
+marvel-api:
+  url: "https://gateway.marvel.com"
+  publicKey: ${MARVEL_PUBLIC_KEY}
+  privateKey: ${MARVEL_PRIVATE_KEY}
+springdoc:
+  api-docs:
+    path: /api-docs
